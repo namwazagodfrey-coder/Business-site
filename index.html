@@ -3,40 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Business | Lilongwe</title>
+<title>Connect Malawi | Find Friends & Loved Ones</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-header{background:#0b3d2e;color:white;padding:60px 20px;text-align:center}
-header h1{font-size:2em}
-.btn{display:inline-block;background:#ff9800;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;margin-top:15px;font-weight:bold}
-section{padding:40px 20px;max-width:900px;margin:auto}
-.card{border:1px solid #ddd;border-radius:12px;padding:20px;margin:10px 0;background:white}
-footer{background:#222;color:#ccc;text-align:center;padding:20px}
-a.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:bold}
+body{background:#f4f6f5;color:#222}
+header{background:#0b3d2e;color:white;padding:50px 20px;text-align:center}
+header h1{font-size:2.2em}
+header p{margin:10px 0}
+.btn{display:inline-block;background:#ff9800;color:white;padding:12px 22px;border-radius:25px;text-decoration:none;font-weight:bold;margin:8px}
+.btn.green{background:#25D366}
+section{padding:30px 20px;max-width:900px;margin:auto}
+h2{text-align:center;margin-bottom:20px;color:#0b3d2e}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.card{background:white;border-radius:12px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,0.1);text-align:center}
+.card img{width:80px;height:80px;border-radius:50%;background:#ddd;margin-bottom:10px}
+.price{border:2px solid #0b3d2e;border-radius:12px;padding:20px;text-align:center;margin:10px 0;background:white}
+.price h3{color:#0b3d2e}
+.steps{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.step{background:white;padding:15px;border-radius:10px;width:250px;text-align:center}
+footer{background:#222;color:#ccc;text-align:center;padding:20px;font-size:14px}
+.safety{background:#fff3cd;padding:15px;border-radius:10px;margin:20px 0;border:1px solid #ffeeba}
 </style>
 </head>
 <body>
 <header>
-<h1>My Business</h1>
-<p>Trusted in Lilongwe, Malawi</p>
-<a class="btn" href="#contact">Contact Us</a>
+<h1>Connect Malawi</h1>
+<p>Find Friends, Lost Loved Ones & Business Partners in Lilongwe and beyond</p>
+<a class="btn" href="#join">Join Free Now</a>
+<a class="btn green" href="https://wa.me/265990000" target="_blank">WhatsApp Admin</a>
 </header>
+
 <section>
-<h2>About Us</h2>
-<p>We provide quality services in Lilongwe. Customer satisfaction is our priority.</p>
+<h2>How It Works</h2>
+<div class="steps">
+<div class="step"><h3>1. Join</h3><p>Submit your profile for free via our form</p></div>
+<div class="step"><h3>2. Browse</h3><p>Find people by area and interest</p></div>
+<div class="step"><h3>3. Connect</h3><p>Tap WhatsApp to start chatting directly</p></div>
+</div>
+<div style="text-align:center;margin-top:20px">
+<a class="btn" id="join" href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank">Post My Profile FREE</a>
+</div>
 </section>
+
 <section>
-<h2>Our Services</h2>
-<div class="card"><h3>Service 1</h3><p>Description here</p></div>
-<div class="card"><h3>Service 2</h3><p>Description here</p></div>
-<div class="card"><h3>Service 3</h3><p>Description here</p></div>
+<h2>Categories</h2>
+<div class="grid">
+<div class="card"><h3>Friendship</h3><p>Meet new friends in your area</p><a class="btn green" href="https://wa.me/265990000" target="_blank">Find Friends</a></div>
+<div class="card"><h3>Lost & Found Family</h3><p>Reconnect with lost relatives</p><a class="btn green" href="https://wa.me/265990000" target="_blank">Search Family</a></div>
+<div class="card"><h3>Business Meetups</h3><p>Find partners, customers, workers</p><a class="btn green" href="https://wa.me/265990000" target="_blank">Network</a></div>
+<div class="card"><h3>Community Groups</h3><p>Church, school, sports groups</p><a class="btn green" href="https://wa.me/265990000" target="_blank">Join Group</a></div>
+</div>
 </section>
-<section id="contact">
-<h2>Contact Us</h2>
-<p>WhatsApp: +265 99 000 0000<br>Email: you@example.com<br>Location: Lilongwe</p>
-<a class="btn" href="https://wa.me/265990000" target="_blank">Chat on WhatsApp</a>
+
+<section>
+<h2>Sample Profiles</h2>
+<div class="grid">
+<div class="card"><div></div><h3>Chisomo, 24</h3><p>Area 49, Lilongwe<br>Looking for: Friendship / Business</p><a class="btn" href="https://wa.me/265990000" target="_blank">Chat</a></div>
+<div class="card"><h3>Blessings, 30</h3><p>Area 25, Lilongwe<br>Looking for: Lost Uncle from Mzuzu</p><a class="btn" href="https://wa.me/265990000" target="_blank">Chat</a></div>
+<div class="card"><h3>Taonga, 27</h3><p>BT, Limbe<br>Looking for: Business Partner</p><a class="btn" href="https://wa.me/265990000" target="_blank">Chat</a></div>
+<div class="card"><h3>YOUR PROFILE HERE</h3><p>Be seen by 100s daily</p><a class="btn" href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank">Add Me</a></div>
+</div>
 </section>
-<footer>© 2026 My Business</footer>
-<a class="whatsapp" href="https://wa.me/265990000" target="_blank">WhatsApp</a>
+
+<section>
+<h2>Make Yourself Visible (Paid)</h2>
+<div class="price"><h3>FREE Listing</h3><p>Your profile in the list</p><p><strong>MK 0</strong></p></div>
+<div class="price" style="border-color:#ff9800"><h3>FEATURED - MK 2,500</h3><p>Top of page for 7 days + WhatsApp broadcast</p><a class="btn" href="https://wa.me/265990000?text=I%20want%20FEATURED" target="_blank">Pay with Airtel Money / TNM Mpamba</a></div>
+<div class="price"><h3>VERIFIED BUSINESS - MK 5,000 / month</h3><p>Badge, logo, priority support</p><a class="btn" href="https://wa.me/265990000?text=I%20want%20VERIFIED" target="_blank">Get Verified</a></div>
+</section>
+
+<section>
+<div class="safety">
+<h3>Safety Rules</h3>
+<p>Never send money before meeting. Meet in public places. Do not share bank details. Admin does not verify all users. Report bad behavior on WhatsApp.</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Connect Malawi | Lilongwe, Malawi</p>
+<p>WhatsApp: +265 99 000 0000</p>
+</footer>
 </body>
   </html>
